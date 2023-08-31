@@ -37,4 +37,9 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
+function deleteAllTasks(){
+    listContainer.innerHTML = "";
+    saveData();
+}
+
 showTask();
