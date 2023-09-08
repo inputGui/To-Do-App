@@ -80,13 +80,17 @@
 button {
     border: none;
     outline: none;
-    background: #00e1ff;
+    background: #00c3ff;
     color: #fff;
     font-size: 14px; /* Reduced font size */
     cursor: pointer;
     border-radius: 40px;
     text-align: center;  /* Horizontally center text */
     line-height: 40px;  /* Vertically center text */
+}
+
+button:hover{
+    background: #0091bd;
 }
 
 button.edit-button{
@@ -155,6 +159,6 @@ ul li span{
     border-radius: 50%;
 }
 
-ul li span::hover{
-    background: #2970ff;
+ul li span:hover{
+    background: #62daff;
 }

@@ -1,5 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+const todoappContainer = document.getElementById("todoapp");
 
 function addTask(){
     if (inputBox.value === "") {
@@ -55,6 +56,25 @@ function editTask(buttonElement){
     saveData();
 }
 
+function createCategory(name) {
+    let category = document.createElement("div");
+    category.className = "category";
+    category.innerHTML = name;
+    category.id = "category-" + new Date().getTime(); // Unique ID
+    document.getElementById("categories-container").appendChild(category);
+
+    category.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+        // Show category-specific context menu
+        let contextMenu = document.getElementById("categoryContextMenu");
+        contextMenu.style.display = "block";
+        contextMenu.style.left = e.clientX + "px";
+        contextMenu.style.top = e.clientY + "px";
+        contextMenu.dataset.categoryId = category.id;
+    });
+}
+
+createCategory("Default");
 showTask();
 
 listContainer.addEventListener("contextmenu", function(e){
@@ -71,6 +91,13 @@ window.addEventListener("click", function(e){
     document.getElementById("contextMenu").style.display = "none";
 });
 
+// Add new task when user presses Enter
+window.addEventListener("keydown", function(e){
+    if (e.key === "Enter") {
+        addTask();
+    }
+});
+
 // Edit task from context menu
 document.getElementById("edit").addEventListener("click", function(){
     let taskId = this.parentNode.parentNode.dataset.taskId;
@@ -80,6 +107,17 @@ document.getElementById("edit").addEventListener("click", function(){
         if (newTask) {
             taskElement.innerText = newTask;
             saveData();
+        }
+    }
+});
+
+document.getElementById("edit-category").addEventListener("click", function() {
+    let categoryId = this.parentNode.parentNode.dataset.categoryId;
+    let categoryElement = document.getElementById(categoryId);
+    if (categoryElement) {
+        let newName = prompt("Edit your category:", categoryElement.innerText);
+        if (newName) {
+            categoryElement.innerText = newName;
         }
     }
 });
