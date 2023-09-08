@@ -9,10 +9,10 @@ Practice makes perfect!
 
 ## Features
 
--  ~~Add new tasks ~~
--  ~~Mark tasks as completed ~~
--  ~~Delete tasks ~~
--  ~~Store tasks in local storage ~~
+-  ~~Add new tasks~~
+-  ~~Mark tasks as completed~~
+-  ~~Delete tasks~~
+-  ~~Store tasks in local storage~~
 
 ## Pending
 - Add folders to hold tasks
