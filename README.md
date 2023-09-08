@@ -12,6 +12,10 @@ This is a simple to-do list application built using HTML, CSS, and JavaScript. T
 - Delete tasks
 - Store tasks in local storage
 
+## Pending
+- Add folders to hold tasks
+- Improve the UI
+
 ## Installation and Setup
 
 1. Clone the repository
