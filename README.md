@@ -2,19 +2,23 @@
 
 ## Overview
 
-This is a simple to-do list application built using HTML, CSS, and JavaScript. This project is perfect for those looking to get started with web development.
+This is a simple to-do list application built using HTML, CSS, and JavaScript.
+I will be improving this project as my skills improve.
+Practice makes perfect!
 
 
 ## Features
 
-- Add new tasks
-- Mark tasks as completed
-- Delete tasks
-- Store tasks in local storage
+-  ~~Add new tasks ~~
+-  ~~Mark tasks as completed ~~
+-  ~~Delete tasks ~~
+-  ~~Store tasks in local storage ~~
 
 ## Pending
 - Add folders to hold tasks
 - Improve the UI
+- Upgrade to REACT
+- Connect to an online database, in this case MongoDB
 
 ## Installation and Setup
 
