@@ -6,6 +6,7 @@ This is a simple to-do list application built using HTML, CSS, and JavaScript.
 I will be improving this project as my skills improve.
 Practice makes perfect!
 
+I am following the Full Stack [Roadmap](https://roadmap.sh/full-stack)
 
 ## Features
 
@@ -13,6 +14,7 @@ Practice makes perfect!
 -  ~~Mark tasks as completed~~
 -  ~~Delete tasks~~
 -  ~~Store tasks in local storage~~
+- ~~Add interactivity using JS~~
 
 ## Pending
 - Add folders to hold tasks

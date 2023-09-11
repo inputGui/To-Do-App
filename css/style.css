@@ -114,6 +114,10 @@ input{
     padding: 10px;
 }
 
+input:hover{
+    background: #fff;
+}
+
 ul li{
     list-style: none;
     font-size: 19px;
@@ -161,4 +165,24 @@ ul li span{
 
 ul li span:hover{
     background: #62daff;
+}
+
+/* Testing some stuff */
+h1 {
+    color: #3aff75;
+}
+
+h1.blueberry { /* This will be applied because of higher specificity */
+    color: blue;
+}
+
+body h1{
+    color: #ff5b5b;
+}
+
+#footer{
+    text-align: center;
+    margin-top: 30px;
+    line-height: normal;
+    font-size: 50%;
 }
